@@ -26,13 +26,15 @@ We selected the data of the categories- 'Fashion & Clothing', 'Jewellery & Shoes
 
 ## Methodology
 
-As a part of cleaning the data, we applied a 10 core filtering on the dataset which removed all products which had lesser than 10 reviews and dropped all rows where reviewText was missing. As on of the main aims of this project was to understand the trend in review sentiment over time and model the relationship between text and ratings, we applied multiple text analysis pipeline to derive insights from the review text data.
+As a part of cleaning the data, we applied a 10 core filtering on the dataset which removed all products which had lesser than 10 reviews and dropped all rows where reviewText was missing. As one of the main aims of this project was to understand the trend in review sentiment over time and model the relationship between text and ratings, we applied multiple text analysis pipeline to derive insights from the review text data.
 
 ### Pipeline 1 : 
 Converting review text into TF-IDF vector representation for regression modelling with ratings. The steps followed here include tokenisation, lammetization, removing stop words and creating n-grams.
 
-#### Pipeline 2 : 
+### Pipeline 2 : 
 Extracting keywords and sentiment from review Text. All the steps to clean the data are followed from the first pipeline.
+
+
 
 After EDA and feature engineering, we used  different models to predict the reviews' star rating:
 - Binary Logistic Regression
